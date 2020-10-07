@@ -2,11 +2,13 @@
 
 # Immersion trainning in APIs development with NodeJS
 
-> Teacher: [Eric Wendel](https://erickwendel.teachable.com/) > <br/>
+> Teacher: [Eric Wendel](https://erickwendel.teachable.com/)
+
+<br/>
 
 <h3>Lessons List</h3>
 
-- [ ] Introdução
+- [x] Introdução
 - [ ] Syncronia em Javascript
 - [ ] Manipulação de Listas
 - [ ] Introdução ao desenvolvimento de testes
