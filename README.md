@@ -1,10 +1,10 @@
-![Screenshot](screen.png)
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="screen.png" alt="screenshot.png">
+</div>
 
 # Immersion trainning in APIs development with NodeJS
 
 > Teacher: [Eric Wendel](https://erickwendel.teachable.com/)
-
-<br/>
 
 <h3>Lessons List</h3>
 
