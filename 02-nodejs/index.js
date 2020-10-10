@@ -61,7 +61,3 @@ getUser(function resolveUser(error, user) {
     });
   });
 });
-
-// const phone = getPhone(user.id);
-
-// console.log("phone", phone);
