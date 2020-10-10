@@ -9,7 +9,7 @@
 <h3>Lessons List</h3>
 
 - [x] Introdução
-- [ ] Syncronia em Javascript
+- [x] Syncronia em Javascript
 - [ ] Manipulação de Listas
 - [ ] Introdução ao desenvolvimento de testes
 - [ ] Node.js além da Web - criando ferramentas de linha de comando
