@@ -51,13 +51,11 @@ getUser(function resolveUser(error, user) {
         console.error("DEU RUIM em ADDRESS", error2);
         return;
       }
-      console.log(`{
-        "user": [
-            name: ${user.name},
-            address: ${address.street}, nº ${address.number},
-            phone: (${phone.ddd}) ${phone.phone}
-        ]
-      }`);
+      console.log(`
+          name: ${user.name},
+          address: ${address.street}, nº ${address.number},
+          phone: (${phone.ddd}) ${phone.phone}
+        `);
     });
   });
 });

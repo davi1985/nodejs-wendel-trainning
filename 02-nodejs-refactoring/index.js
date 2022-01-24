@@ -10,7 +10,7 @@ Objectives:
 function getUser() {
   // error -> reject
   // sucess -> resolve
-  return new Promise(function resolvePromise(resolve, reject) {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       return resolve({
         id: 1,
@@ -22,7 +22,7 @@ function getUser() {
 }
 
 function getPhone(idUser) {
-  return new Promise(function resolvePromise(resolve, reject) {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       return resolve({
         phone: "9999 8888",
@@ -46,6 +46,7 @@ const getAddressAsync = util.promisify(getAddress);
 // to manipulate sucess -> .then
 // to manipulate error -> .catch
 const userPromise = getUser();
+
 userPromise
   .then((user) => {
     return getPhone(user.id).then((result) => {
@@ -60,6 +61,7 @@ userPromise
   })
   .then((result) => {
     const address = getAddressAsync(result.user.id);
+
     return address.then((address) => {
       return {
         user: result.user,
@@ -71,8 +73,8 @@ userPromise
   .then((result) => {
     console.log(`
       Name: ${result.user.name}
-      Endereço: ${result.address.street}, nº ${result.address.number}
-      Telefone: (${result.phone.ddd}) ${result.phone.phone}`);
+      Address: ${result.address.street}, nº ${result.address.number}
+      Phone: (${result.phone.ddd}) ${result.phone.phone}`);
   })
   .catch((error) => {
     console.error("DEU RUIM", error);
