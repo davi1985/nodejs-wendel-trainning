@@ -10,7 +10,7 @@
 
 - [x] Introdução
 - [x] Syncronia em Javascript
-- [ ] Manipulação de Listas
+- [x] Manipulação de Listas
 - [ ] Introdução ao desenvolvimento de testes
 - [ ] Node.js além da Web - criando ferramentas de linha de comando
 - [ ] Banco de Dados - Projeto Multibancos
