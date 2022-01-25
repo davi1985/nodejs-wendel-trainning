@@ -9,6 +9,10 @@ const DEFAULT_ITEM_REGISTER = {
 };
 
 describe("Heros manipulation", () => {
+  before(async () => {
+    await database.register(DEFAULT_ITEM_REGISTER);
+  });
+
   it("should to search a hero using files", async () => {
     const expected = DEFAULT_ITEM_REGISTER;
 
@@ -17,9 +21,12 @@ describe("Heros manipulation", () => {
     deepEqual(result, expected);
   });
 
-  // it("should register an hero using files", async () => {
-  //
+  it("should register an hero using files", async () => {
+    const expected = DEFAULT_ITEM_REGISTER;
 
-  //   ok(null, expected);
-  // });
+    const result = await database.register(DEFAULT_ITEM_REGISTER);
+    const [data] = await database.list(DEFAULT_ITEM_REGISTER.id);
+
+    deepEqual(data, expected);
+  });
 });
