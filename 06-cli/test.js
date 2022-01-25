@@ -25,8 +25,17 @@ describe("Heros manipulation", () => {
     const expected = DEFAULT_ITEM_REGISTER;
 
     const result = await database.register(DEFAULT_ITEM_REGISTER);
+
     const [data] = await database.list(DEFAULT_ITEM_REGISTER.id);
 
     deepEqual(data, expected);
+  });
+
+  it("should remove hero by id", async () => {
+    const expected = true;
+
+    const result = await database.remove(DEFAULT_ITEM_REGISTER.id);
+
+    deepEqual(result, expected);
   });
 });

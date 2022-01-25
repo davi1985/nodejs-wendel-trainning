@@ -45,6 +45,26 @@ class Database {
 
     return filteredData;
   }
+
+  async remove(id) {
+    if (!id) {
+      await this.writeInFile([]);
+
+      return true;
+    }
+
+    const data = await this.getDataFromFile();
+
+    const index = data.findIndex((item) => item.id === parseInt(id));
+
+    if (index === -1) {
+      throw Error("Hero not found.");
+    }
+
+    data.splice(index, 1);
+
+    return await this.writeInFile(data);
+  }
 }
 
 module.exports = new Database();
