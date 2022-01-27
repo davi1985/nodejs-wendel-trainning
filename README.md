@@ -12,7 +12,7 @@
 - [x] Syncronia em Javascript
 - [x] Manipulação de Listas
 - [x] Introdução ao desenvolvimento de testes
-- [ ] Node.js além da Web - criando ferramentas de linha de comando
+- [x] Node.js além da Web - criando ferramentas de linha de comando
 - [ ] Banco de Dados - Projeto Multibancos
 - [ ] Introdução ao Postgres e Bancos Relacionais
 - [ ] Introdução ao MongoDB e Bancos Não-relacionais
